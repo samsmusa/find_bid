@@ -1,0 +1,57 @@
+
+    <!-- pagination -->
+
+    <section class="pagination">
+      <div class="container pagination-bg">
+        <div class="row">
+          <div class="row">
+            <div class="col-md-7 m-auto about-me-head">
+              <h1>search bid here</h1>
+              <span></span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="d-flex m-auto">
+              <input class="searchBox form-control" placeholder="Search Bid">
+              <div class="icon-search">
+                <a href=""><i class="fas fa-search"></i></a>
+              </div>
+              
+            </div>
+            <ul class="table-th">
+              <li class="title">Title</li>
+              <li class="location">Location</li>
+              <li class="p-date" >Published Date</li>
+              <li class="c-date">Closing Date</li>
+            </ul>
+            <div id="content">
+            {% for bid in bids_list %}
+              <div class="result well result-css">
+                <ul>
+                  <li class="title"><a href="{% url 'bid:bid_details' bid.id %}">{{bid.title}}</a></li>
+                  <li class="location">{{bid.state}}</li>
+                  <li class="p-date" >{{bid.published}}</li>
+                  <li class="c-date">{{bid.end}}</li>
+                 
+                </ul>
+              </div>
+              {% endfor %}
+              
+            </div>
+            <div id="pagingControls">
+  
+            </div>
+            <div id="showingInfo" class="well entries" style="margin-top:20px">
+  
+            </div>
+            {% if request.user.is_authenticated %}
+            {% else %}
+            <p><strong>see full bid please sign in</strong></p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- pagination -->
+

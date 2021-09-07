@@ -1,0 +1,87 @@
+/*font-family: 'Bowlby One SC', cursive;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.contact-us{
+
+}
+.contact-content{
+
+padding: 50px 20px;
+
+background: #f0f0f0;
+}
+.contact-content h3{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 48px;
+    color: #0091ff;
+}
+.contact-content form{
+
+}
+.contact-content form input{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 42px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: 0px 12px;
+    margin-bottom: 17px;
+    font-weight: 400;
+    border: 1px solid #bfbfbf;
+    transition: 0.4s all ease-in-out;
+}
+.contact-content form input:focus-visible{
+    outline: none;
+
+}
+.contact-content form input:hover{
+    box-shadow: 1px 1px 6px black;
+    border: 1px solid #bfbfbf;
+}
+.contact-content form input[type = 'text']{
+
+}
+.contact-content form input[type = 'email']{
+    
+}
+.contact-content form input[type = 'submit']{
+    
+width: 36%;
+    
+border-radius: 7px;
+    
+border: none;
+    
+color: white;
+font-weight: 500;
+    
+background: #0091ff;
+transition: 0.4s all ease-in-out;
+}
+.contact-content form input[type = 'submit']:hover{
+    background: transparent;
+    border: none;
+    color: black;
+    box-shadow: 3px 4px 7px black;
+}
+.contact-content form textarea{
+    border: 1px solid #bfbfbf;
+    transition: 0.4s all ease-in-out;
+}
+.contact-content form textarea:focus{
+    box-shadow: none;
+}
+.contact-content form textarea:hover{
+    box-shadow: 1px 1px 6px black;
+    border: 1px solid #bfbfbf;
+}

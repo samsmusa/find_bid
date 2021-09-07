@@ -1,0 +1,737 @@
+/*font-family: 'Bowlby One SC', cursive;
+font-family: 'Roboto', sans-serif; */
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+ body{
+    background-image: linear-gradient( 180deg, rgb(47 47 47 / 81%) 0%, rgb(68 68 68 / 85%) 30%), url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 8px;
+    background-position: center;
+}
+header{
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    margin-left: 21px;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 8px 17px;
+    background-color: #3A94D8;
+
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    box-shadow: 3px 3px 8px #3A94D8;
+    color: white;
+    background: transparent;
+    border: none;
+}
+.navbar-brand {
+    font-family: 'Bowlby One SC', cursive;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.navbar-brand span{
+    color: white;
+}
+
+
+/* ==============================================================banner part start======================================= */
+.banner{
+
+padding: 70px 0px;
+width: 100%;
+}
+.banner-content h1{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 41px;
+}
+.banner-content h1 span{
+
+font-size: 34px;
+
+color: #3A94D8;
+}
+.banner-content ul{
+
+list-style: none;
+
+display: flex;
+
+ margin: 0;
+
+padding: 0;
+
+margin-bottom: 25px;
+}
+.banner-content ul li{
+
+}
+.banner-content ul li span{
+    position: relative;
+    margin-right: 20px;
+}
+.banner-content ul li span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 90px;
+    background-color: #3A94D8;
+}
+.banner-content ul li p{
+    font-family: 'Roboto', sans-serif;
+    color: #adadad;
+    font-size: 16px;
+    line-height: 30px;
+}
+.banner-content ul li a{
+
+}
+.button-banner{
+    font-family: 'Roboto', sans-serif;
+    background-color: #3a94d8;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    padding: 7px 16px;
+    border-radius: 7px;
+    border: none;
+}
+.button-banner:hover{
+    box-shadow: 3px 3px 8px #3A94D8;
+color: white;
+background: transparent;
+border: none;
+}
+
+
+
+/*=========================== counter part--------------------------------------------------------------------------start---- */
+.pre-counter{
+
+background-color: white;
+
+text-align: center;
+}
+.pre-counter h1{
+    font-family: 'Roboto', sans-serif;
+    padding: 48px 26px;
+    font-size: 29px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+.pre-counter h1 span{
+    font-family: 'Roboto', sans-serif;
+    color: #3a94d8;
+    font-weight: 700;
+    font-size: 31px;
+}
+.counter{
+    background-color: #f7f7f7;
+    padding: 40px 25px;
+    display: flex;
+    align-items: center;
+}
+.counter-left h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: #5c5c5c;
+    font-weight: 600;
+    line-height: 32px;
+}
+.counter-left h1 span{
+    font-family: 'Roboto', sans-serif;
+    text-transform: unset;
+    color: #3a94d8;
+    font-size: 31px;
+    font-weight: bold;
+}
+.counter-right{
+    
+text-align: center;
+}
+.counter-right h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 41px;
+    color: #ff696a;
+    font-weight: 600;
+}
+.counter-right p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #555555;
+}
+
+/* =============================================================counter part end======================================= */
+
+/* ==========================================================pagination================================================ */
+.pagination{
+
+}
+.about-me {
+    position: relative;
+
+}
+.about-me-head {
+padding: 40px 80px;
+}
+.about-me-head h1 {
+font-family: Raleway,sans-serif;
+text-transform: uppercase;
+font-size: 33px;
+font-weight: 700;
+text-align: center;
+color: #3a94d8;
+}
+.about-me-head span {
+display: inline-block;
+height: 2px;
+width: 100%;
+background: #3a94d8;
+position: relative;
+}
+.about-me-head span::before {
+content: "";
+position: absolute;
+left: 0%;
+top: 50%;
+transform: translateY(-50%);
+width: 25px;
+height: 5px;
+background: #3a94d8;
+animation: 3s linear 0s infinite alternate none running sidemove;
+}
+@keyframes sidemove { 
+0% {
+    left: 0%;
+}
+100% {
+    left: 95%;
+}
+}
+
+.d-flex{
+    position: relative;
+    width: 40%;
+}
+.icon-search{
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translatey(-50%);
+    background-color: #3a94d8;
+    border-radius: 3px;
+    transition: 0.4s all ease-in-out;
+    border: 1px solid transparent;
+}
+.icon-search a i{
+    padding: 7px 10px;
+    color: white;
+    transition: 0.4s all ease-in-out;
+}
+.icon-search:hover{
+    border: 1px solid #3a94d8;
+    background: transparent;
+    color: black;
+}
+.icon-search:hover a i{
+    color: black;
+}
+.btn-sm{
+    background-color: #3a94d8;
+    border: 0px;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-sm:focus{
+    box-shadow: none;
+}
+.btn-success.disabled, .btn-success:disabled {
+    color: #fff;
+    background-color: #3a94d8;
+    border-color:none;
+    border: 0px;
+}
+
+.btn-success:hover {
+    color: black;
+    background-color: #3a94d8;
+    border-color: #3a94d8;
+    border: 0px;
+}
+#pagingControls {
+    padding-left: 27px;
+}
+.pagination-bg{
+    background-color:white;
+    padding: 30px 0px;
+}
+.searchBox{
+    margin: auto;
+    border: 1px solid #3a94d8;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+.table-th{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.table-th li{
+
+    text-align: center;
+    margin: auto;
+}
+#content{
+
+}
+
+.result-css{
+
+}
+.result-css ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 16px;
+    text-transform:capitalize;
+    font-weight: 400;
+    transition: 0.4s all ease-in-out;
+    margin-bottom: 12px;
+    border: 1px solid rgb(172, 172, 172);
+    
+}
+.result-css ul li{
+
+    text-align: center;
+    margin: auto;
+    padding: 12px 0px;
+}
+.title{
+width: 30%;
+text-align: left;
+font-size: 14px;
+}
+.location{
+width: 20%;
+font-size: 14px;
+}
+.p-date{
+width: 20%;
+font-size: 14px;
+}
+.c-date{
+width: 20%;
+font-size: 14px;
+}
+.entries{
+    margin-left: 30px;
+    font-weight: bold;
+}
+.result-css ul:hover {
+    background-color: #3a94d8;
+    color: white;
+    box-shadow: 1px 1px 2px 5px #3a94d8;
+}
+
+
+
+
+
+/* ========================================================pagination=================================================== */
+
+
+/*================================================================ feature part start=============================================== */
+.features{
+    padding: 50px 0px;
+}
+.feature-content{
+    padding: 50px 50px;
+}
+.feature-content h6{
+    font-family: 'Roboto', sans-serif;
+    color: #adadad;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 16px;
+}
+.feature-content h3{
+    font-family: 'Roboto', sans-serif;
+text-transform: capitalize;
+
+font-size: 30px;
+
+font-weight: 700;
+
+color: #3a94d8;
+}
+.feature-content ul{
+
+margin: 0;
+
+padding: 0;
+
+list-style: none;
+
+display: flex;
+
+margin-top: 19px;
+
+line-height: 28px;
+}
+.feature-content ul li{
+
+}
+.feature-content ul li span{
+    position: relative;
+    margin-right: 38px;
+}
+.feature-content ul li span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 110px;
+    background-color: #3A94D8;
+}
+.feature-content ul li p{
+    font-family: 'Roboto', sans-serif;
+color: #adadad;
+}
+.feature-image{
+
+}
+.feature-image img{
+
+}
+/* ==================================================feature end================================================= */
+
+/* ==================================================pricing part start============================================ */
+
+.pricing{
+
+ padding-top: 60px;
+
+background-color: black;
+
+opacity: 0.5;
+}
+.pricing-head{
+}
+.pricing-head h1{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    color: #0091ff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 27px;
+}
+.pricing-head ul{
+
+list-style: none;
+
+display: flex;
+
+margin: 0;
+
+padding: 0;
+}
+.pricing-head ul li{
+
+}
+.pricing-head ul li span{
+    position: relative;
+    margin-right: 38px;
+}
+.pricing-head ul li span::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 110px;
+    background-color: #0091ff;
+}
+.pricing-head ul li h6{
+    font-family: 'Roboto', sans-serif;
+    color: #ff1d1e;
+    font-size: 18px;
+    font-weight: 500;
+}
+.pricing-head ul li p{
+    font-family: 'Roboto', sans-serif;
+    color: #d3d3d3;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 14px;
+}
+.price{
+    
+border: 2px solid #565656;
+    
+padding: 7px 21px;
+}
+.price-content{
+
+padding: 12px 0px;
+
+border-bottom: 2px solid #565656;
+}
+.price-content h1{
+
+color: #0091ff;
+
+font-size: 42px;
+
+padding: 0;
+
+margin: 0;
+}
+.price-content h1 sup{
+
+font-size: 28px;
+}
+.price-content h1 span{font-size: 20px;color: #565656;}
+.price-content p{
+
+color: #ff3b35;
+
+text-transform: capitalize;
+
+font-size: 19px;
+
+font-weight: 500;
+}
+.viewer{
+
+margin-top: 7px;
+
+padding: 9px 0px;
+}
+.viewer ul{margin: 0;padding: 0;list-style: none;font-size: 16px;text-transform: capitalize;color: white;display: flex;font-weight: 300;justify-content: space-between;padding: 1px 0px;}
+.viewer ul li{
+
+}
+.viewer ul li p{
+
+}
+.viewer ul li span{
+
+font-size: 21px;
+
+color: #ff3b35;
+}
+.support{
+
+padding: 12px 0px;
+
+margin-top: 7px;
+}
+.support ul{margin: 0;padding: 0;list-style: none;font-size: 16px;text-transform: capitalize;color: white;font-weight: 300;display: flex;justify-content: space-between;padding: 1px 0px;}
+.support ul li{
+
+}
+.support ul li p{
+
+}
+.support ul li i{
+
+font-size: 19px;
+
+color: #ff3b35;
+}
+.notification{
+
+margin-top: 7px;
+
+padding: 9px 0px;
+}
+.notification ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0px;
+}
+.notification ul li{
+
+}
+.notification ul li p{
+
+}
+.notification ul li i{
+
+font-size: 19px;
+
+color: #ff3b35;
+}
+.bid-number{
+
+margin-top: 7px;
+
+padding: 9px 0px;
+}
+.bid-number ul{
+
+margin: 0;
+
+padding: 0;
+
+list-style: none;
+
+font-size: 16px;
+
+text-transform: capitalize;
+
+color: white;
+
+font-weight: 300;
+
+display: flex;
+
+justify-content: space-between;
+
+padding: 1px 0px;
+}
+.bid-number ul li{
+
+}
+.bid-number ul li p{
+
+}
+.bid-number ul li i{
+
+font-size: 15px;
+
+color: #ff3b35;
+}
+.consultation{
+
+margin-top: 7px;
+
+padding: 9px 0px;
+}
+.consultation ul{margin: 0;padding: 0;list-style: none;font-size: 16px;text-transform: capitalize;color: white;font-weight: 300;display: flex;justify-content: space-between;padding: 1px 0px;}
+.consultation ul li{
+
+}
+.consultation ul li p{
+
+}
+.consultation ul li i{
+
+font-size: 19px;
+
+color: #ff3b35;
+}
+.plan-button{
+    
+font-size: 15px;
+    
+color: white;
+    
+font-weight: 700;
+    
+text-transform: uppercase;
+    
+background: #0091ff;
+    
+margin-top: 26px;
+    
+padding: 8px 18px;
+    
+border: none;
+    
+transition: 0.4s all ease-in-out;
+}
+.plan-button:hover{
+    box-shadow: 3px 3px 8px #0091ff;
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+
+
+/* ==================================================pricing part start============================================ */
+
+
+/* ==========================================footer part start================================================== */
+
+footer{
+
+margin-top: 29px;
+
+background-color: #000000;
+
+opacity: 0.5;
+}
+footer h6{
+    font-family: 'Roboto', sans-serif;
+font-size: 17px;
+
+color: white;
+
+font-weight: 400;
+
+margin-bottom: 10px;
+}
+footer p{
+    font-family: 'Roboto', sans-serif;
+color: #adadad;
+
+font-size: 14px;
+
+font-weight: 300;
+
+letter-spacing: 1px;
+}
+footer p span{
+    font-family: 'Roboto', sans-serif;
+color: #3a94d8;
+    
+font-size: 16px;
+    
+font-weight: 700;
+    
+text-transform: capitalize;
+    
+letter-spacing: 3px;
+}
+
+/* =======================================footer part end========================================================== */

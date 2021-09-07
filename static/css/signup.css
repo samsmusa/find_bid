@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sign-up{
+}
+.signup-content{
+
+background: #f4f4f4;
+
+padding: 57px 0px;
+}
+.signup-content h5{
+
+text-transform: capitalize;
+
+font-size: 25px;
+
+letter-spacing: 2px;
+
+text-align: center;
+
+margin-bottom: 41px;
+
+color: #0d6efd;
+}
+.signup-content a{
+
+text-transform: capitalize;
+
+display: flex;
+
+justify-content: center;
+
+text-transform: capitalize;
+
+text-decoration: none;
+}
+.signup-content form{
+
+}
+
+.signup-content form input{
+
+width: 69%;
+
+height: 36px;
+
+margin-bottom: 23px;
+
+font-size: 16px;
+
+font-weight: 400;
+
+text-transform: capitalize;
+
+letter-spacing: 1px;
+
+border: 1px solid #a4a4a4;
+
+caret-color: black;
+
+background: transparent;
+
+padding: 0px 12px;
+transition: 0.4s all ease-in-out;
+}
+.signup-content form input:focus-visible{
+    outline: none;
+}
+.signup-content form input:hover{
+    box-shadow: 1px 1px 6px black;
+    border: 1px solid #a4a4a4;
+}
+.signup-content form input[type = 'text']{
+}
+.signup-content form input[type = 'tel']{
+    
+}
+.signup-content form input[type = 'email']{
+
+}
+.signup-content form input[type = 'password']{
+
+}
+
+.signup-content form ul{
+
+list-style: none;
+
+margin: 0;
+
+padding: 0;
+
+display: flex;
+
+justify-content: center;
+}
+.signup-content form ul li{
+
+}
+.signup-content form ul li p{
+
+text-transform: capitalize;
+
+font-size: 15px;
+} 
+.signup-content form ul li a{
+
+font-size: 17px;
+
+margin-left: 7px;
+
+text-decoration: none;
+}
+.signup-content form input[type = 'submit']{
+    width: 30%;
+    border-radius: 3px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    transition: 0.4s all ease-in-out;
+    font-weight: 700;
+}
+.signup-content form input[type = 'submit']:hover{
+    background: transparent;
+    border: none;
+    color: black;
+    box-shadow: 3px 4px 7px black;
+
+}
+.signup-content form a{
+
+}

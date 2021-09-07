@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% block content %}
+<p>{{bid.title}}</p>
+<p>{{bid.state}}</p>
+<p>{{bid.published}}</p>
+<p>{{bid.end}}</p>
+{% if request.user.is_authenticated %}
+{% if message is not None %}
+<p><Strong>{{message}} at {{userbid.created}}</Strong></p>
+<p><Strong>{{userbid.status}}</Strong></p>
+{% else %}
+<form action="" method="POST">
+{% csrf_token %}
+{{form}}
+<input type="submit" value="Place Bid">
+</form>
+{% endif %}
+{% else %}
+<button><a href="{% url 'user_login:login' %}">Place Bid</a> </button>
+{% endif %}
+{% endblock content %}

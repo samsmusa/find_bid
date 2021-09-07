@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% block content %}
+<p>{{profile.name}}</p>
+<p>{{profile.email}}</p>
+<p>{{profile.bio}}</p>
+<p>{{profile.facebook}}</p>
+
+<table>
+<tr>
+<td>tiltle</td>
+<td>state</td>
+<td>pub</td>
+<td>end</td>
+<td>created</td>
+</tr>
+{% for bid in userbid %}
+<tr>
+{{bid}}
+<td>{{bid.bid.title}}</td>
+<td>{{bid.bid.state}}</td>
+<td>{{bid.bid.published}}</td>
+<td>{{bid.bid.end}}</td>
+<td>{{bid.created}}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock content %}

@@ -1,0 +1,45 @@
+{% extends 'main.html' %}
+{% block content %} 
+
+{% if request.user.is_authenticated %}
+
+{% else %}
+{% include 'banner.html' %}
+{% endif %}
+
+{% include 'counter_feature.html' %}
+{% include 'pagination.html' %}
+{% if request.user.is_authenticated %}
+
+{% else %}
+{% include 'pricing.html' %}
+{% endif %}
+{% include 'footer.html' %} 
+
+{% comment %} {% for bid in bids_list %}
+
+    <tr>
+        <td>{{bid.title}}</td>
+        <td>{{bid.state}}</td>
+        <td>{{bid.published}}</td>
+        <td>{{bid.end}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</div> {% endcomment %}
+
+<br>
+<br>
+<hr>
+<hr>
+{% comment %} <div>
+    <UL>
+    {% for page in paginator.page_range %}
+        <li><a href="?page={{page}}">{{page}}</a></li>
+    {% endfor %}
+    </UL>
+</div> {% endcomment %}
+
+</body>
+</html>
+{% endblock content %}
